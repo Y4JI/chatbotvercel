@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const VERIFY_TOKEN = process.env.VERIFY_TOKEN ||  'TOKEN_NAME';
+const VERIFY_TOKEN = process.env.VERIFY_TOKEN ||  'chatbotverify';
 
 app.get('/api/webhook', (req, res) => {
     const mode = req.query['hub.mode'];
